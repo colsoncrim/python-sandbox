@@ -1,47 +1,48 @@
 # A Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
 
- # Create tuple
- fruits = ('Apples', 'Oranges', 'Grapes')
- #fruits2 = tuple(('Apples', 'Oranges', 'Grapes'))
+# Create tuple
+fruits = ('Apples', 'Oranges', 'Grapes')
 
-# Single value needs a trailing comma
-fruits2 = ('Apples')
+# Using a constructor
+# fruits2 = tuple(('Apples', 'Oranges', 'Grapes'))
+
+# Single value needs trailing comma
+fruits2 = ('Apples',)
 
 # Get value
 print(fruits[1])
 
 # Can't change value
-# fruits[0] = 'Pears'
+fruits[0] = 'Pears'
 
 # Delete tuple
 del fruits2
 
-print(len(fruits2))
-
-
-
+# Get length
+print(len(fruits))
 
 
 # A Set is a collection which is unordered and unindexed. No duplicate members.
 
-# Create a set
+# Create set
 fruits_set = {'Apples', 'Oranges', 'Mango'}
 
-# check if in Set
+# Check if in set
 print('Apples' in fruits_set)
-
-# add duplicate
-fruits_set.add('Apples')
 
 # Add to set
 fruits_set.add('Grape')
 
-# Remove
+# Remove from set
 fruits_set.remove('Grape')
 
-# Clear Set
+# Add duplicate
+fruits_set.add('Apples')
+
+# Clear set
 fruits_set.clear()
 
-
+# Delete
+del fruits_set
 
 print(fruits_set)
